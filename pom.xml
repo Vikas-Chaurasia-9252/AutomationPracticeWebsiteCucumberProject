@@ -27,6 +27,12 @@
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-java</artifactId>
 			<version>${cucumber.version}</version>
+			<exclusions>
+        <exclusion>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </exclusion>
+    </exclusions>
 			<scope>test</scope>
 		</dependency>
 
@@ -107,6 +113,7 @@
 						<encoding>UTF-8</encoding>
 						<source>${java.version}</source>
 						<target>${java.version}</target>
+						<annotationProcessing>false</annotationProcessing>
 					</configuration>
 				</plugin>
 				<plugin>
@@ -120,6 +127,7 @@
 						<parallel>methods</parallel>
 						<threadCount>4</threadCount>
 						<useUnlimitedThreads>false</useUnlimitedThreads>
+						<annotationProcessing>false</annotationProcessing>
 					</configuration>
 				</plugin>
 

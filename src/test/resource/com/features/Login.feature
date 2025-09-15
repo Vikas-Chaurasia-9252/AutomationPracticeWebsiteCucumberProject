@@ -1,18 +1,15 @@
 Feature: Login page feature
-
-	Scenario: Login page title
-		Given user is on login page
-		When user gets the title of the page
-		Then page title should be "LoginPage Practise | Rahul Shetty Academy"
 		
-	Scenario: Forget Password Link
+	Scenario: Login with incorrect credentials
 		Given user is on login page
-		Then forgot password link should be displayed
+		When user enters email "vcvikas@gmail.com"
+		And user enters password "Sign@13"
+		And user clicks on Login button
+		Then page contains "Your email or password is incorrect!" message 
 		
 	Scenario: Login with correct credentials
 		Given user is on login page
-		When user enters username "vikasqa@gmail.com"
+		When user enters email "vcvikas@gmail.com"
 		And user enters password "Newpass@13"
 		And user clicks on Login button
-		Then user gets the title of the home page
-		And page title should be "My Account"  
+		Then page contains " Logged in as " message 
