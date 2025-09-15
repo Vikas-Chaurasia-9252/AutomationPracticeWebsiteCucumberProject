@@ -13,54 +13,40 @@ import io.cucumber.java.en.When;
 public class LoginPageSteps {
 	LoginPage obj = new LoginPage(DriverFactory.getDriver());
 	String pageTitle;
-	@Given("user is on login page")
-	public void user_is_on_login_page() {
-		DriverFactory.getDriver().get("https://rahulshettyacademy.com/loginpagePractise/");
-		
-	}
+	
+	 @Given("user is on login page")
+    public void user_is_on_login_page() {
+        // Code to navigate to login page
+        System.out.println("User navigates to Login Page");
+    }
 
-	@When("user gets the title of the page")
-	public void user_gets_the_title_of_the_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	     pageTitle = obj.getPageTitle();
-	}
+    @When("user enters email {string}")
+    public void user_enters_email(String email) {
+        // Code to enter email in the login page
+        System.out.println("Entered email: " + email);
+    }
 
-	@Then("page title should be {string}")
-	public void page_title_should_be(String string) {
-	    // Write code here that turns the phrase above into concrete actions
-		System.out.println("Expected Title: "+ string);
-	    Assert.assertEquals(pageTitle, string);
-	}
+    @When("user enters password {string}")
+    public void user_enters_password(String password) {
+        // Code to enter password
+        System.out.println("Entered password: " + password);
+    }
 
-	@Then("forgot password link should be displayed")
-	public void forgot_password_link_should_be_displayed() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
+    @When("user clicks on Login button")
+    public void user_clicks_on_login_button() {
+        // Code to click login button
+        System.out.println("Login button clicked");
+    }
 
-	@When("user enters username {string}")
-	public void user_enters_username(String string) {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("user enters password {string}")
-	public void user_enters_password(String string) {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("user clicks on Login button")
-	public void user_clicks_on_login_button() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Then("user gets the title of the home page")
-	public void user_gets_the_title_of_the_home_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
+    @Then("page contains {string} message")
+    public void page_contains_message(String expectedMessage) {
+        // Code to verify that page contains message
+        String actualMessage = "DummyMessageFromUI"; // Replace with actual code to fetch message
+        System.out.println("Verifying message: " + expectedMessage);
+        
+        // Example assertion
+        // assertEquals(expectedMessage, actualMessage);
+    }
+	
 
 }

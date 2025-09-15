@@ -5,10 +5,11 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-    features = "src/test/resource/com/features",  // path to your .feature file
+    features = "src/test/resources/com/features",  // path to your .feature file
     glue = {"stepdefinitions"},                  // package where step defs will be
-    plugin = {"pretty"}
+    plugin = {"pretty"},
+    dryRun = false
 )
-public class MyTestRunner {
+public class TestRunner  {
 
 }
