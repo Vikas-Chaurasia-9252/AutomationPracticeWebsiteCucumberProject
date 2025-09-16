@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: testRunners.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.857 s - in testRunners.TestRunner
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 35.936 s <<< FAILURE! - in testRunners.TestRunner
+null on testRunners.TestRunner(testRunners.TestRunner)  Time elapsed: 35.827 s  <<< FAILURE!
+com.google.gson.JsonIOException: Failed making field 'java.lang.Throwable#detailMessage' accessible; either increase its visibility or write a custom TypeAdapter for its declaring type.
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make field private java.lang.String java.lang.Throwable.detailMessage accessible: module java.base does not "opens java.lang" to unnamed module @1936f0f5
+

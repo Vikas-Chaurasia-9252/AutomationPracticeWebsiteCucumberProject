@@ -7,7 +7,8 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
     features = "src/test/resources/com/features",  // path to your .feature file
     glue = {"stepdefinitions" , "applicationHooks"},                  // package where step defs will be
-    plugin = {"pretty"},
+    plugin = {"pretty",
+        "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
     dryRun = false
 )
 public class TestRunner  {

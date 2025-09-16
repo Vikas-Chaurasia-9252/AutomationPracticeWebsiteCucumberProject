@@ -2,6 +2,7 @@ package com.factory;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -15,7 +16,11 @@ public class DriverFactory {
 		
 		if(driver.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
-			tldriver.set(new ChromeDriver());
+			 ChromeOptions options = new ChromeOptions();
+            options.addArguments("--headless=new"); // ✅ run in background (new headless mode in Chrome 109+)
+            options.addArguments("--disable-gpu");
+            options.addArguments("--window-size=1920,1080");
+			tldriver.set(new ChromeDriver(options));
 		}
 		
 		

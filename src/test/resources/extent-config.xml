@@ -1,0 +1,24 @@
+<extentreports>
+  <configuration>
+    <!-- Theme -->
+    <theme>dark</theme>
+
+    <!-- Report Title -->
+    <reportName>Automation Test Report</reportName>
+    <documentTitle>Extent Report - QA Automation</documentTitle>
+
+    <!-- Encoding -->
+    <encoding>UTF-8</encoding>
+
+    <!-- Timestamp format -->
+    <timeStampFormat>dd-MM-yyyy HH:mm:ss</timeStampFormat>
+
+    <!-- Charts -->
+    <enableCategoryView>true</enableCategoryView>
+    <enableExceptionView>true</enableExceptionView>
+
+    <!-- Custom CSS or JS -->
+    <css>.badge-primary { background-color: #6f42c1; }</css>
+    <js>console.log("Extent Report Loaded!");</js>
+  </configuration>
+</extentreports>

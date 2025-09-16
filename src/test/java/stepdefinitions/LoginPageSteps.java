@@ -1,7 +1,7 @@
 package stepdefinitions;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
+
 
 import com.factory.DriverFactory;
 import com.pages.LoginPage;
@@ -10,6 +10,9 @@ import applicationHooks.Hooks;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import static org.junit.Assert.*;
+
+import org.junit.Assert;
 
 public class LoginPageSteps {
 	private WebDriver driver;
@@ -56,7 +59,9 @@ public class LoginPageSteps {
         actualMessage = obj.getWelcomeText();
 		actualMessage = actualMessage.trim();
     } else {
-        throw new IllegalArgumentException("Unknown message: " + expectedMessage);
+        actualMessage="";
+		System.out.println("Message did not match");
+
     }
 
     System.out.println("Verifying message: " + expectedMessage);

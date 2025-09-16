@@ -1,7 +1,10 @@
 package applicationHooks;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.Properties;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -45,8 +48,21 @@ public class Hooks {
 		
 		if(sc.isFailed()) {
 			String fileName = sc.getName().replaceAll(" ", "_");
+			 File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+
+        // Build destination path
+        String screenshotDir = System.getProperty("user.dir") + "/target/ExtentReports/screenshots/";
+        File dest = new File(screenshotDir + fileName + ".png");
+
+        try {
+            FileUtils.copyFile(src, dest);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+		
 			byte[] sourcePath = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
 			sc.attach(sourcePath, "image/png", fileName);
+			System.out.println("Screenshot saved at: " + dest.getAbsolutePath());
 		}
 		
 	}

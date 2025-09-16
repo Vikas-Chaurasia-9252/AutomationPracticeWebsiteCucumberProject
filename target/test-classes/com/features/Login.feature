@@ -12,4 +12,4 @@ Feature: Login page feature
 		When user enters email "vcvikas@gmail.com"
 		And user enters password "Newpass@13"
 		And user clicks on Login button
-		Then page contains "Logged in as Virat" message 
+		Then page contains "Logged in as Vikas" message 
