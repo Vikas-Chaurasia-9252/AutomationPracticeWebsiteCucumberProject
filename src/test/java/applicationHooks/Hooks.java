@@ -21,14 +21,17 @@ public class Hooks {
 	@Before(order = 0)
 	public void getProp() {
 		cread = new ConfigReader();
+		prop = new Properties();
 		prop = cread.init_prop();
 	}
 	
 	@Before(order=1)
 	public void launchBrowser() {
+		System.out.println("I am in hook before1 before");
 		String browserName = prop.getProperty("browser");
 		driverFactory = new DriverFactory();
 		driver = driverFactory.init_driver(browserName);
+		System.out.println("I am in hook before1");
 	}
 	
 	
