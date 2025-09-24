@@ -40,7 +40,9 @@ public class Hooks {
 	
 	@After(order=0)
 	public void teardown() {
-		driver.quit();
+		  if (driver != null) {
+        driver.quit();
+    }
 	}
 	
 	@After(order=1)

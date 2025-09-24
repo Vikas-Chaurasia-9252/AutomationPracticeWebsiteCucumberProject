@@ -1,7 +1,9 @@
 package com.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import com.utilities.Utility;
 
@@ -31,7 +33,9 @@ public class PaymentPage {
     }
 
     public String clickOnpayButton(){
-        driver.findElement(payAndConfirmOrder).click();
+        WebElement paybtn = driver.findElement(payAndConfirmOrder);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true)",paybtn);
+        paybtn.click();
         utils = new Utility(driver);
         utils.waitForElementTobeVisible(orderCnfMsg);
         return driver.findElement(orderCnfMsg).getText();

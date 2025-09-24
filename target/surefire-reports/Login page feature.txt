@@ -1,7 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: Login page feature
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 15.437 s <<< FAILURE! - in Login page feature
-Login with correct credentials(Login page feature)  Time elapsed: 9.095 s  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<[Logged in as Virat]> but was:<[]>
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 60.025 s - in Login page feature

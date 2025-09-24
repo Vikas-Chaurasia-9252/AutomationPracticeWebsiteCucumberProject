@@ -1,3 +1,8 @@
-com\pages\LoginPage.class
-com\utilities\ConfigReader.class
+com\pages\HomePage.class
 com\factory\DriverFactory.class
+com\utilities\ConfigReader.class
+com\pages\PaymentPage.class
+com\pages\CartPage.class
+com\utilities\Utility.class
+com\pages\ProductsPage.class
+com\pages\LoginPage.class

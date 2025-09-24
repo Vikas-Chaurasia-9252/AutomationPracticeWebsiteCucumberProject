@@ -9,10 +9,18 @@ public class HomePage {
     private By WebsiteLogo = By.xpath("//img[@alt='Website for automation practice']");
     private By ProductsPageLink = By.xpath("//a[text()=' Products']");
     private By CartsPageLink = By.xpath("//a[text()=' Cart']");
+    private By homeLink = By.xpath("//a[@style='color: orange;']");
     private WebDriver driver;
 
     public HomePage(WebDriver driver){
         this.driver = driver;
+
+    }
+
+     public String checkHomePageLink(){
+
+        String actualSTR = driver.findElement(homeLink).getText();
+        return actualSTR;
 
     }
 

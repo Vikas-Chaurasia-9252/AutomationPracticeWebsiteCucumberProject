@@ -1,3 +1,7 @@
+stepdefinitions\ProductPageSteps.class
 testRunners\TestRunner.class
 applicationHooks\Hooks.class
 stepdefinitions\LoginPageSteps.class
+stepdefinitions\CartSteps.class
+stepdefinitions\PaymentSteps.class
+stepdefinitions\HomePageSteps.class

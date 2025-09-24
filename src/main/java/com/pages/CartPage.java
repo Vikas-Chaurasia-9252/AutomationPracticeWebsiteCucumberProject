@@ -11,16 +11,20 @@ public class CartPage {
       private By ProductCheck = By.xpath("//table[@class='table table-condensed']/tbody/tr/td[2]/h4");
       private By proceedBtn = By.xpath("//a[text()='Proceed To Checkout']");
       private By placeOrder = By.xpath("//a[text()='Place Order']");
+      private By waitForCartPage = By.xpath("//li[@class='active']");
       private WebDriver driver;
       private Utility utils;
 
     public CartPage(WebDriver driver){
         this.driver = driver;
+         utils = new Utility(driver);
 
     }
 
     public void goToCartPage(){
         driver.findElement(CartLink).click();
+        utils.waitForElementTobeVisible(waitForCartPage);
+        
     }
 
     public boolean isProductAdded(String ExpectedProductAdded){
@@ -32,12 +36,12 @@ public class CartPage {
 
     public void clickOnProceedToCheckout(){
         driver.findElement(proceedBtn).click();
-        utils = new Utility(driver);
         utils.waitForElementTobeVisible(placeOrder);
         driver.findElement(placeOrder).click();
 
     }
 
+    
 
 
 }
