@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Sep 16 15:01:03 IST 2025</td>
+<td>Started on:</td><td>Thu Sep 25 11:20:01 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>35 seconds (35692 ms)</td>
+<tr><td>Total time:</td><td>98 seconds (98544 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,145 +67,5 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='testRunners.TestRunner.null()'><b>null</b><br>Test class: testRunners.TestRunner</td>
-<td><div><pre>com.google.gson.JsonIOException: Failed making field &apos;java.lang.Throwable#detailMessage&apos; accessible; either increase its visibility or write a custom TypeAdapter for its declaring type.
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:286)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:130)
-	at com.google.gson.Gson.getAdapter(Gson.java:556)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:160)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:294)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:130)
-	at com.google.gson.Gson.getAdapter(Gson.java:556)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:160)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:294)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:130)
-	at com.google.gson.Gson.getAdapter(Gson.java:556)
-	at com.google.gson.internal.bind.CollectionTypeAdapterFactory.create(CollectionTypeAdapterFactory.java:53)
-	at com.google.gson.Gson.getAdapter(Gson.java:556)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:160)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:294)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:130)
-	at com.google.gson.Gson.getAdapter(Gson.java:556)
-	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:55)
-	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.write(CollectionTypeAdapterFactory.java:97)
-	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.write(CollectionTypeAdapterFactory.java:61)
-	at com.google.gson.Gson.toJson(Gson.java:842)
-	at com.google.gson.Gson.toJson(Gson.java:812)
-	at com.google.gson.Gson.toJson(Gson.java:783)
-	at com.aventstack.extentreports.reporter.JsonFormatter.flush(JsonFormatter.java:57)
-	at com.aventstack.extentreports.reporter.JsonFormatter.access$000(JsonFormatter.java:17)
-	at com.aventstack.extentreports.reporter.JsonFormatter$1.onNext(JsonFormatter.java:37)
-	at com.aventstack.extentreports.reporter.JsonFormatter$1.onNext(JsonFormatter.java:30)
-	at io.reactivex.rxjava3.subjects.PublishSubject$PublishDisposable.onNext(PublishSubject.java:310)
-	at io.reactivex.rxjava3.subjects.PublishSubject.onNext(PublishSubject.java:226)
-	at com.aventstack.extentreports.ReactiveSubject.onFlush(ReactiveSubject.java:83)
-	at com.aventstack.extentreports.AbstractProcessor.onFlush(AbstractProcessor.java:85)
-	at com.aventstack.extentreports.ExtentReports.flush(ExtentReports.java:279)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.finishReport(ExtentCucumberAdapter.java:300)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.access$600(ExtentCucumberAdapter.java:62)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$8.receive(ExtentCucumberAdapter.java:136)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$8.receive(ExtentCucumberAdapter.java:133)
-	at io.cucumber.core.eventbus.AbstractEventPublisher.send(AbstractEventPublisher.java:51)
-	at io.cucumber.core.eventbus.AbstractEventBus.send(AbstractEventBus.java:12)
-	at io.cucumber.core.runtime.CucumberExecutionContext.emitTestRunFinished(CucumberExecutionContext.java:93)
-	at io.cucumber.core.runtime.CucumberExecutionContext.finishTestRun(CucumberExecutionContext.java:74)
-	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:236)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
-	... 69 more
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace237630710", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace237630710'><pre>com.google.gson.JsonIOException: Failed making field &apos;java.lang.Throwable#detailMessage&apos; accessible; either increase its visibility or write a custom TypeAdapter for its declaring type.
-	at com.google.gson.internal.reflect.ReflectionHelper.makeAccessible(ReflectionHelper.java:38)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:286)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:130)
-	at com.google.gson.Gson.getAdapter(Gson.java:556)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:160)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:294)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:130)
-	at com.google.gson.Gson.getAdapter(Gson.java:556)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:160)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:294)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:130)
-	at com.google.gson.Gson.getAdapter(Gson.java:556)
-	at com.google.gson.internal.bind.CollectionTypeAdapterFactory.create(CollectionTypeAdapterFactory.java:53)
-	at com.google.gson.Gson.getAdapter(Gson.java:556)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:160)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:294)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:130)
-	at com.google.gson.Gson.getAdapter(Gson.java:556)
-	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:55)
-	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.write(CollectionTypeAdapterFactory.java:97)
-	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.write(CollectionTypeAdapterFactory.java:61)
-	at com.google.gson.Gson.toJson(Gson.java:842)
-	at com.google.gson.Gson.toJson(Gson.java:812)
-	at com.google.gson.Gson.toJson(Gson.java:783)
-	at com.aventstack.extentreports.reporter.JsonFormatter.flush(JsonFormatter.java:57)
-	at com.aventstack.extentreports.reporter.JsonFormatter.access$000(JsonFormatter.java:17)
-	at com.aventstack.extentreports.reporter.JsonFormatter$1.onNext(JsonFormatter.java:37)
-	at com.aventstack.extentreports.reporter.JsonFormatter$1.onNext(JsonFormatter.java:30)
-	at io.reactivex.rxjava3.subjects.PublishSubject$PublishDisposable.onNext(PublishSubject.java:310)
-	at io.reactivex.rxjava3.subjects.PublishSubject.onNext(PublishSubject.java:226)
-	at com.aventstack.extentreports.ReactiveSubject.onFlush(ReactiveSubject.java:83)
-	at com.aventstack.extentreports.AbstractProcessor.onFlush(AbstractProcessor.java:85)
-	at com.aventstack.extentreports.ExtentReports.flush(ExtentReports.java:279)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.finishReport(ExtentCucumberAdapter.java:300)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.access$600(ExtentCucumberAdapter.java:62)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$8.receive(ExtentCucumberAdapter.java:136)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$8.receive(ExtentCucumberAdapter.java:133)
-	at io.cucumber.core.eventbus.AbstractEventPublisher.send(AbstractEventPublisher.java:51)
-	at io.cucumber.core.eventbus.AbstractEventBus.send(AbstractEventBus.java:12)
-	at io.cucumber.core.runtime.CucumberExecutionContext.emitTestRunFinished(CucumberExecutionContext.java:93)
-	at io.cucumber.core.runtime.CucumberExecutionContext.finishTestRun(CucumberExecutionContext.java:74)
-	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:236)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
-	at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:82)
-	at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:70)
-	at org.testng.TestRunner$1.run(TestRunner.java:570)
-	at org.testng.TestRunner.runJUnitWorkers(TestRunner.java:717)
-	at org.testng.TestRunner.privateRunJUnit(TestRunner.java:601)
-	at org.testng.TestRunner.run(TestRunner.java:502)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make field private java.lang.String java.lang.Throwable.detailMessage accessible: module java.base does not &quot;opens java.lang&quot; to unnamed module @1936f0f5
-	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:391)
-	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:367)
-	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:315)
-	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:183)
-	at java.base/java.lang.reflect.Field.setAccessible(Field.java:177)
-	at com.google.gson.internal.reflect.ReflectionHelper.makeAccessible(ReflectionHelper.java:35)
-	... 69 more
-</pre></div></td>
-<td>0</td>
-<td>testRunners.TestRunner</td></tr>
-</table><p>
 </body>
 </html>

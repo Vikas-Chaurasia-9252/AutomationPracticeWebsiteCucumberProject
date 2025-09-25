@@ -1,24 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: Add product to cart
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 275.364 s <<< FAILURE! - in Add product to cart
-Add a single product to cart(Add product to cart)  Time elapsed: 275.363 s  <<< ERROR!
-org.openqa.selenium.NoSuchSessionException: 
-invalid session id: session deleted as the browser has closed the connection
-from disconnected: unable to send message to renderer
-  (Session info: chrome=139.0.7258.155)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'INDELNB1456', ip: '10.5.50.249', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\chourasv\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62405}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cdbd00fa315612fb16b611dfeb5743af
-
-Add a single product to cart(Add product to cart)  Time elapsed: 0 s  <<< ERROR!
-org.openqa.selenium.NoSuchSessionException: 
-invalid session id
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'INDELNB1456', ip: '10.5.50.249', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\chourasv\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62405}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cdbd00fa315612fb16b611dfeb5743af
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 61.522 s - in Add product to cart
