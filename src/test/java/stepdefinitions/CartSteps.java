@@ -22,7 +22,7 @@ public class CartSteps {
     cartobj.goToCartPage();
 
 }
-// this is comment
+// this is comment1
 
 @Then("I should see the product added with description {string} added")
 public void i_should_see_the_product_added_with_description_added(String productDescription) {
