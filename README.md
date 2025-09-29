@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>CucumberPOMSeries – Automation Testing Framework</title>
 </head>
 <body>
 
-  <h1>CucumberPOMSeries – Automation Testing Framework</h1>
+  <h1>ECommerce Website – Automation Testing Framework</h1>
 
   <p>This project is a <strong>Cucumber + Selenium + Java + Maven</strong> automation framework built for testing the 
-  <a href="http://automationpractice.com/">Automation Practice Website</a>.  
+  <a href="https://automationexercise.com/">Automation Exercise Website</a>.  
   It follows the <strong>Page Object Model (POM)</strong> design pattern for better readability, reusability, and maintainability.</p>
 
   <h2>📂 Project Structure</h2>
@@ -58,7 +57,7 @@ CucumberPOMSeries
   <h2>🏗️ How to Set Up</h2>
   <ol>
     <li>Clone the repo:
-      <pre>git clone https://github.com/your-repo/CucumberPOMSeries.git
+      <pre>git clone https://github.com/Vikas-Chaurasia-9252/AutomationPracticeWebsiteCucumberProject.git
 cd CucumberPOMSeries</pre>
     </li>
     <li>Install dependencies:
@@ -101,9 +100,9 @@ target/extent-reports/
 
   <h2>👤 Author</h2>
   <p>
-    <strong>Your Name</strong><br>
+    <strong>Vikas Chourasia</strong><br>
     <strong>Role:</strong> QA Automation Engineer<br>
-    <strong>Email:</strong> your.email@example.com
+    <strong>Email:</strong> vcvikaschaurasia@gmail.com
   </p>
 
 </body>
